@@ -1,0 +1,342 @@
+@import "./static/fonts/fonts.css";
+
+body {
+  margin: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.wrapper {
+  width: 1180px;
+}
+
+.wrapper-header, .wrapper-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  height: 80px;
+  border-bottom: 1px solid #202020;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 80px;
+  border-top: 1px solid #202020;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 32px;
+}
+
+.nav {
+  display: flex;
+}
+
+.top-nav__link {
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.top-nav__link:hover {
+  color: orange;
+}
+
+.top-nav__link--active {
+  color: orange;
+}
+
+.first-screen {
+  background-image: url('./static/images/tunnel.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.h2 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+.h2--regular {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.h2--black {
+  color: black;
+}
+
+::selection {
+  background: grey;
+}
+
+.text {
+  line-height: 2;
+}
+
+/*lesson 1*/
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 0 40px 0;
+  box-sizing: border-box;
+}
+
+.blocks__item {
+  background-color: #252525;
+  width: calc(50% - 20px);
+  margin-bottom: 40px;
+}
+
+.blocks__item:hover {
+  background-color: orange;
+}
+
+.blocks__item--atom {
+  height: 20px;
+}
+
+.blocks__item--xs {
+  height: 40px;
+  background-color: #303030;
+}
+
+.blocks__item--s {
+  height: 60px;
+  background-color: #353535;
+}
+
+.blocks__item--m {
+  height: 80px;
+  background-color: #404040;
+}
+
+.blocks__item--l {
+  height: 100px;
+  background-color: #454545;
+}
+
+.blocks__item--xl {
+  height: 120px;
+  background-color: #505050;
+}
+
+.blocks__item--xxl {
+  height: 140px;
+  background-color: #555;
+}
+
+.blocks__item--xxxl {
+  height: 160px;
+  background-color: #606060;
+}
+
+.blocks__item--xxxxl {
+  height: 180px;
+  background-color: #656565;
+}
+
+.blocks__item--universe {
+  height: 200px;
+  background-color: #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.universe {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 32px;
+  color: white;
+}
+
+/*lesson 2*/
+
+.wrapper-content--second {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.big-block {
+  width: 33%;
+  /*height: 100px;*/
+  background-color: #323232;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-block__item {
+  width: 100px;
+  height: 100px;
+  opacity: .5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-block__item:hover {
+  opacity: 1;
+}
+
+.big-block__item--colour1 {
+  background-color: yellow;
+  padding: 15px;
+}
+
+.big-block__item--colour2 {
+  background-color: orange;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.big-block__item--colour3 {
+  background-color: red;
+  margin-left: 6px;
+}
+
+.pointless-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pointless-text__item {
+  opacity: .5;
+  width: calc(50% - 20px);
+}
+
+/*lesson3*/
+ .wrapper-block1 {
+   background: #555;
+   background-image: linear-gradient(to bottom, rgba(114, 188, 212, 0.3), rgba(255, 165, 0, 0.3)), url('./static/images/pic1.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 80px;
+   padding: 40px;
+   box-sizing: border-box;
+ }
+
+ .wrapper-block2 {
+   background: #222;
+   background-image: linear-gradient(to bottom, rgba(114, 212, 138, 0.3), rgb(212, 163, 114, 0.3)), url('./static/images/pic2.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 80px 0;
+   padding: 40px;
+   box-sizing: border-box;
+ }
+
+ .inner-block {
+   width: 200px;
+   height: 100px;
+   border: 1px dashed white;
+   background-color: rgba(0, 0, 0, 0.7);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .inner-block-1, .inner-block-2, .inner-block-3, .inner-block-4, .inner-block-5 {
+   font-family: 'Abril Fatface', cursive;
+   color: white;
+ }
+
+ .inner-block-1 {
+   font-size: 32px;
+ }
+
+ .inner-block-2 {
+   font-size: 24px;
+ }
+
+ .inner-block-3 {
+   font-size: 34px;
+   font-family: inherit;
+   font-weight: bold;
+   text-transform: uppercase;
+ }
+
+ .inner-block-4 {
+   font-size: 30px;
+   text-decoration: underline;
+ }
+
+ .inner-block-5 {
+   font-size: 30px;
+   font-family: inherit;
+   font-weight: bold;
+   font-style: italic;
+ }
+
+ .inner-block-6 {
+   font-size: 30px;
+   font-family: 'Noto Serif', serif;
+ }
+
+ .inner-block-7 {
+   font-size: 26px;
+   font-family: 'Noto Serif', serif;
+   font-weight: bold;
+ }
+
+ .inner-block-8 {
+   font-size: 34px;
+   font-family: 'Noto Serif', serif;
+   font-weight: bold;
+   font-style: italic;
+ }
+
+ .inner-block-9 {
+   font-size: 28px;
+   text-decoration: line-through;
+   font-family: 'Noto Serif', serif;
+ }
+
+ .inner-block-10 {
+   font-size: 38px;
+   font-family: 'Noto Serif', serif;
+   font-style: italic;
+ }

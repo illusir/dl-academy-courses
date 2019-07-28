@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Noto Serif";
+  src: url("./noto-serif/NotoSerif-Regular.ttf") format("ttf"),
+}
+
+@font-face {
+  font-family: "Noto Serif Bold";
+  src: url("./noto-serif/NotoSerif-Bold.ttf") format("ttf"),
+}
+
+@font-face {
+  font-family: "Noto Serif Italic";
+  src: url("./noto-serif/NotoSerif-RegularItalic.ttf") format("ttf"),
+}
+
+@font-face {
+  font-family: "Noto Serif Bold Italic";
+  src: url("./noto-serif/NotoSerif-BoldItalic.ttf") format("ttf"),
+}
