@@ -145,7 +145,8 @@ body {
 .button__text {
   margin: 20px;
   text-transform: uppercase;
-  font-family: "Bebas Neue Bold";
+  font-family: "Bebas Neue";
+  font-weight: bold;
   font-size: 24px;
   line-height: 24px;
 }
