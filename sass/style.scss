@@ -1,2 +1,9 @@
-@import "basic/basic.scss";
-@import "nav-first-screen/nav-first-screen.scss";
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "basic/basic";
+@import "nav-first-screen/nav-first-screen";
+/*landing scss*/
+@import "advantages-landing/advantages-landing";
+@import "content-landing/content-landing";
+@import "footer-landing/footer-landing";
+@import "modal/modal.scss";

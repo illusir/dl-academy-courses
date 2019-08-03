@@ -1,0 +1,85 @@
+.footer {
+  background: #232323;
+  padding: 50px 0;
+  font-size: 14px;
+  color: $white;
+  font-weight: bold;
+}
+
+.link-bottom {
+  color: $white;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.footer-column-one {
+  display: flex;
+
+  &__item {
+    width: 180px;
+    margin-right: 40px;
+
+    &--first {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+
+    &--second {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+
+    &--third {
+      display: flex;
+      flex-flow: column;
+    }
+  }
+}
+
+.address {
+  opacity: .5;
+  margin: 0;
+}
+
+.social {
+    display: block;
+
+    &__link {
+      display: inline-block;
+      width: 31px;
+      height: 31px;
+      margin-right: 6px;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      &--last {
+        margin-right: 0;
+      }
+
+      &--fb {
+        background: url('../jsCourse/landing/static/svg/sprait.svg') no-repeat -1px -184px;
+      }
+
+      &--gp {
+        background: url('../jsCourse/landing/static/svg/sprait.svg') no-repeat -97px -184px;
+      }
+
+      &--yt {
+        background: url('../jsCourse/landing/static/svg/sprait.svg') no-repeat -160px -184px;
+      }
+
+      &--tw {
+        background: url('../jsCourse/landing/static/svg/sprait.svg') no-repeat -33px -184px;
+      }
+
+      &--in {
+        background: url('../jsCourse/landing/static/svg/sprait.svg') no-repeat -128px -184px;
+      }
+    }
+}

@@ -1,0 +1,54 @@
+@mixin section() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin container() {
+  width: 1180px;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin header-landing() {
+  align-items: center;
+  justify-content: space-between;
+  }
+
+@mixin button-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style() {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 4px;
+}
+
+@mixin advantages-icon-size() {
+  width: 60px;
+  height: 60px;
+}
+
+@mixin h1() {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@mixin h2() {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 33px 0;
+
+}
+
+@mixin h3() {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+}

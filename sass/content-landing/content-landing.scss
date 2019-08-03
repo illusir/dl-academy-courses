@@ -1,0 +1,95 @@
+.content {
+  background: linear-gradient(#314584 50%, #02A2DF);
+  padding-bottom: 0;
+}
+
+.optimizers {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    width: calc(50% - 10px);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    z-index: 1;
+  }
+}
+
+.opt-picture {
+  width: 280px;
+  height: 240px;
+  margin-bottom: 10px;
+
+  &--boss {
+    background: url('../jsCourse/landing/static/images/boss-small-min.png') no-repeat center / contain;
+  }
+
+  &--spot {
+    background: url('../jsCourse/landing/static/images/spot-small-min.png') no-repeat center / contain;
+    }
+}
+
+.circle {
+  width: 420px;
+  height: 420px;
+  /*background: $light-blue;*/
+  position: absolute;
+  /*border-radius: 50%;*/
+  /*filter: blur(50px); - for chrome*/
+  background: url('../jsCourse/landing/static/images/ellipse.png') no-repeat center / contain; /*for edge*/
+  z-index: -1;
+  }
+
+  .download-button {
+    @include button-style();
+    @include button-flex();
+    height: 60px;
+    border: none;
+    background: linear-gradient(#FFD600, #FF9A03);
+    padding: 8px 40px 8px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 0 #FF5C00;
+    text-shadow: 0 -1px 0 #FF5C00;
+    cursor: pointer;
+    margin-top: 40px;
+    z-index: 1;
+
+    &:hover {
+      text-shadow: 0 -1px #FF9B03;
+      background: linear-gradient(#FFEB34, #FFC803);
+      box-shadow: 0 3px 0 #FF9B03;
+    }
+
+    &:active {
+      background: linear-gradient(#FFC803, #FFEB34);
+    }
+
+    &__link {
+      color: $blue;
+    }
+  }
+
+  .info {
+    margin: 80px 0 0 0;
+
+    &__text {
+      color: white;
+      margin: 0 0 10px 0;
+
+      &:nth-last-child(1) {
+        margin: 0;
+      }
+    }
+  }
+
+  .picture {
+    background-image: linear-gradient(rgba(1, 161, 223, 1), rgba(1, 161, 223, 0)), url("../jsCourse/landing/static/images/bottom-pic-min.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 400px;
+  }

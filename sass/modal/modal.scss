@@ -1,0 +1,137 @@
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(49, 69, 132, 0.85);
+    opacity: 0;
+    z-index: 10;
+    transition: 0.6s;
+    pointer-events: none;
+
+    &--active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background: white;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  z-index: 11;
+  box-sizing: border-box;
+  transition: 0.2s;
+  pointer-events: none;
+  padding: 50px 0 63px 0;
+
+  &--active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.cross-exam {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 15px;
+  right: -50px;
+  cursor: pointer;
+
+  &__line {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 40px;
+    height: 4px;
+    background-color: $white;
+  }
+
+  &__line1 {
+    transform: rotate(45deg);
+  }
+
+  &__line2 {
+    transform: rotate(-45deg);
+  }
+}
+
+.cross-exam:hover .cross-exam__line {
+  background-color: $orange;
+  }
+
+.form-modal {
+  width: 380px;
+
+  &__input {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ececec;
+    background: #f7f7f7;
+
+    &:focus {
+      border: 2px solid $orange;
+      outline: none;
+      background: $white;
+    }
+  }
+
+  &__textarea {
+    padding-top: 18px;
+    resize: none;
+    height: 120px;
+  }
+
+  &__title {
+    @include h3();
+    font-size: $h3;
+    line-height: 39px;
+    color: $blue;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    @include button-style();
+    @include button-flex();
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: linear-gradient(#FFD600, #FF9A03);
+    padding: 8px 40px 8px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 0 #FF5C00;
+    color: $blue;
+    text-shadow: 0 -1px 0 #FF5C00;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover {
+      text-shadow: 0 -1px #FF9B03;
+      background: linear-gradient(#FFEB34, #FFC803);
+      box-shadow: 0 3px 0 #FF9B03;
+    }
+
+    &:active {
+      background: linear-gradient(#FFC803, #FFEB34);
+    }
+  }
+}
+
+::placeholder {
+  opacity: .35;
+  font-family: 'Lato', sans-serif;
+}

@@ -1,0 +1,51 @@
+.adv-description {
+  width: 580px;
+
+  &__text {
+    margin: 0;
+  }
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.advantages-block {
+  width: calc(100% / 3 - 10px);
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  &__icon {
+    @include advantages-icon-size();
+    margin-bottom: 20px;
+
+    &--solar {
+      background: url('../jsCourse/landing/static/svg/sprite.svg') no-repeat -1px -59px;
+    }
+    &--repowering {
+      background: url('../jsCourse/landing/static/svg/sprite.svg') no-repeat -62px -59px;
+    }
+    &--microgrids {
+      background: url('../jsCourse/landing/static/svg/sprite.svg') no-repeat -124px -59px;
+    }
+  }
+
+  &__point {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.check {
+  background: url('../jsCourse/landing/static/svg/sprite.svg') no-repeat -73px -121px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.point {
+  margin: 0 0 0 10px;
+}
