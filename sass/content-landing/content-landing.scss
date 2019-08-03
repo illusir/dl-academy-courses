@@ -25,11 +25,11 @@
   margin-bottom: 10px;
 
   &--boss {
-    background: url('../jsCourse/landing/static/images/boss-small-min.png') no-repeat center / contain;
+    background: url('./landing/static/images/boss-small-min.png') no-repeat center / contain;
   }
 
   &--spot {
-    background: url('../jsCourse/landing/static/images/spot-small-min.png') no-repeat center / contain;
+    background: url('./landing/static/images/spot-small-min.png') no-repeat center / contain;
     }
 }
 
@@ -40,12 +40,12 @@
   position: absolute;
   /*border-radius: 50%;*/
   /*filter: blur(50px); - for chrome*/
-  background: url('../jsCourse/landing/static/images/Ellipse.png') no-repeat center / contain; /*for edge*/
+  background: url('./landing/static/images/Ellipse.png') no-repeat center / contain; /*for edge*/
   z-index: -1;
   }
 
   .and {
-    background: url('../jsCourse/landing/static/svg/Sprite.svg') no-repeat -1px -121px;
+    background: url('./landing/static/svg/Sprite.svg') no-repeat -1px -121px;
     width: 70px;
     height: 120px;
     position: absolute;
@@ -96,7 +96,7 @@
   }
 
   .picture {
-    background-image: linear-gradient(rgba(1, 161, 223, 1), rgba(1, 161, 223, 0)), url("../jsCourse/landing/static/images/bottom-pic-min.jpg");
+    background-image: linear-gradient(rgba(1, 161, 223, 1), rgba(1, 161, 223, 0)), url("./landing/static/images/bottom-pic-min.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
