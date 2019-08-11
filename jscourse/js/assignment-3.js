@@ -29,12 +29,12 @@ document.getElementById("button2").onclick = function () {
 
   function arrayWhile() {
     while (arr.length <= 4) {
-      if (arr.length < 4) {
-        arr.push(num);
+      //if (arr.length < 4) {
         var num = prompt("While Method - Enter a Value");
-      } else {
         arr.push(num);
-      }
+      //} else {
+        //arr.push(num);
+      //}
     }
   }
 
