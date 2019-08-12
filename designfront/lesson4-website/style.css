@@ -13,12 +13,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 50px 0 50px;
 }
 
 .container {
   width: 1180px;
   display: flex;
+  padding: 50px 0 50px 0;
 }
 
 .container--content {
@@ -29,7 +29,7 @@ body {
 
 .container--header {
   /*display: block;*/
-  padding: 20px 0 20px 0;
+  padding: 27px 0 27px 0;
   box-sizing: border-box;
   align-items: center;
   height: 100px;
@@ -37,16 +37,16 @@ body {
   }
 
 .container--footer {
-  /*align-items: center;
-  justify-content: space-between;*/
-  padding: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 34px 0 34px 0;
 }
 
 .container--contacts {
-  /*align-items: center;
-  justify-content: space-between;*/
-  padding: 20px 0 20px 0;
-}
+  align-items: center;
+  flex-flow: column;
+  }
 
 .link {
   text-decoration: none;
@@ -96,7 +96,6 @@ body {
   height: 48px;
   background: url("./static/images/logo-min.png") no-repeat top / cover;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-  margin-bottom: 20px;
 }
 
 .nav {
@@ -167,7 +166,18 @@ body {
   background-color: #FFE01B;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
+
+.button:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+  background-color: #ECCC00;
+  }
+
+  .button:active {
+    background-color: #FFEB6C;
+  }
 
 .button__text {
   margin: 20px;
@@ -183,11 +193,99 @@ body {
   background-color: #FFE01B;
   }
 
-/*footer*/
-.nav--footer {
-  margin-bottom: 25px;
+.contacts-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
+.contacts-block__item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 171px;
+  background-color: #343434;
+  position: relative;
+}
+
+.social {
+  width: 110px;
+  height: 110px;
+}
+
+.social--vk {
+  background: url("./static/svg/sprite.svg") 0 -71px;
+}
+
+.social--insta {
+  background: url("./static/svg/sprite.svg") -110px -71px;
+}
+
+.social--tel {
+  background: url("./static/svg/sprite.svg") -220px -71px;
+}
+
+.social--mail {
+  background: url("./static/svg/sprite.svg") -330px -71px;
+}
+
+.social-name {
+  color: white;
+  font-family: "Bebas Neue";
+  font-size: 22px;
+  line-height: 22px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms;
+  position: absolute;
+  bottom: 35px;
+  }
+
+.contacts-block__item:hover .social-name {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contacts-block__item:hover .social {
+  transform: translateY(-15px);
+  transition: transform 300ms;
+}
+
+@keyframes phone-animation {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.call-button {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #FF6969;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  animation: phone-animation 2s infinite;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+}
+
+.call-button__phone {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  background: white;
+  /*background: url("./static/svg/sprite.svg") -220px -71px;*/
+  }
+
+/*footer*/
 .contacts-block {
   display: flex;
 }
