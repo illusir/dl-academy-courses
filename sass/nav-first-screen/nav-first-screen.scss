@@ -276,3 +276,13 @@ height: 50px;
   font-weight: bold;
   background: url("./static/images/1st-screen.jpg") no-repeat top / cover;
 }
+
+/*js new classes*/
+
+.nav__link--red {
+  color: red;
+}
+
+.nav__link--italic {
+  font-style: italic;
+}
