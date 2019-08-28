@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+#body-exam {
+    background: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+    color: black;
+    }
+
+.section-exam {
+  @include section();
+
+  &:nth-child(even) {
+    background: #f2f2f2;
+  }
+}
+
+.container-exam {
+  margin: 0 auto;
+  width: 1180px;
+  display: flex;
+  justify-content: left;
+  padding: 50px 0;
+
+  &--header {
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    padding: 0;
+
+  }
+
+  &--date {
+    flex-flow: column;
+    align-items: left;
+  }
+
+  &--lamp {
+    flex-flow: column;
+    align-items: left;
+  }
+
+  &--parallax {
+    flex-flow: column;
+    align-items: left;
+  }
+
+  &--footer {
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+  }
+
+}
+
+.header-exam {
+  &__nav {
+    width: calc(100% / 3);
+  }
+}
+
+.title {
+  &--two {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+  }
+
+  &--narrow {
+    width: 50%;
+  }
+}
+
+.date-exam {
+  &__input {
+    width: 380px;
+    height: 42px;
+    border: 2px solid #3590CC;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: none;
+  }
+}
+
+.lamp-exam {
+  &__lamps {
+    display: flex;
+  }
+}
+
+.lamp {
+  width: 75px;
+  height: 80px;
+  margin-left: 25px;
+
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+
+  &--black {
+    background: url("./jscourse/exam/static/svg/black.svg") no-repeat top / cover;
+  }
+
+  &--yellow {
+    background: url("./jscourse/exam/static/svg/yellow.svg") no-repeat top / cover;
+  }
+
+  &--blue {
+    background: url("./jscourse/exam/static/svg/blue.svg") no-repeat top / cover;
+  }
+}
+
+.parallax-exam {
+  &__frame {
+    width: 780px;
+    height: 400px;
+    background: white;
+    align-self: center;
+  }
+}
+
+.header__logo {
+  background: url("./jscourse/exam/static/images/logo.png") no-repeat;
+  width: 212px;
+  height: 68px;
+}
+
+.link-exam {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.text-exam {
+  font-size: 16px;
+  margin: 0;
+}

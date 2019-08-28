@@ -31,22 +31,12 @@ body {
   /*display: block;*/
   padding: 27px 0 27px 0;
   box-sizing: border-box;
-  align-items: center;
   height: 100px;
-  justify-content: space-between;
   }
 
 .container--footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 34px 0 34px 0;
 }
-
-.container--contacts {
-  align-items: center;
-  flex-flow: column;
-  }
 
 .link {
   text-decoration: none;
@@ -91,6 +81,26 @@ body {
   justify-content: center;
 }
 
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.contacts__content {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   width: 115px;
   height: 48px;
@@ -131,7 +141,7 @@ body {
 
 /*content*/
 .content {
-  background: url("./static/images/background-min.jpg") no-repeat top / cover;
+  background: url("./static/images/background-min.jpg") no-repeat center / cover;
   position: relative;
   display: flex;
   align-items: center;
@@ -250,7 +260,7 @@ body {
 
 .contacts-block__item:hover .social {
   transform: translateY(-15px);
-  transition: transform 300ms;
+  transition: transform .3s;
 }
 
 @keyframes phone-animation {
@@ -275,6 +285,12 @@ body {
   justify-content: center;
   animation: phone-animation 2s infinite;
   box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+  transition: .5s ease-out;
+}
+
+.call-button:hover {
+  background: #333;
+  transition: .5s;
 }
 
 .call-button__phone {
@@ -285,9 +301,18 @@ body {
   /*background: url("./static/svg/sprite.svg") -220px -71px;*/
   }
 
+  .call-button:hover .call-button__phone {
+    transform: rotate(10deg);
+    transition: .5s;
+  }  
+
 /*footer*/
 .contacts-block {
   display: flex;
+}
+
+::selection {
+  background: #FF6969;
 }
 
 /*.contacts-block__item {
