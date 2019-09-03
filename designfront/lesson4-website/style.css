@@ -99,6 +99,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .logo {
@@ -305,6 +306,11 @@ body {
     transform: rotate(10deg);
     transition: .5s;
   }  
+
+/* blog */
+.blog {
+  background: #F2F2F2;
+}
 
 /*footer*/
 .contacts-block {
