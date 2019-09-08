@@ -45,6 +45,12 @@
     align-items: left;
   }
 
+  &--slider {
+    flex-flow: column;
+    align-items: left;
+    position: relative;
+  }
+
   &--footer {
     align-items: center;
     height: 100px;
@@ -81,6 +87,12 @@
     padding: 0 20px;
     box-sizing: border-box;
     background: none;
+
+    &:focus {
+      border: 2px solid orange;
+      outline: none;
+      background: white;
+    }
   }
 }
 
@@ -131,6 +143,89 @@
       background: rgba(196, 196, 196, 0.7);
     }
   }
+}
+
+.slider-exam {
+  &__sliders {
+    width: 700px;
+    height: 400px;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  } 
+
+  &__slide {
+    display: flex;
+  }
+
+  &__arrow {
+    width: 30px;
+    height: 15px;
+    opacity: .5;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+       
+    &--left {
+      background: url("./jscourse/exam/static/svg/arrow-left.svg") no-repeat top / cover;
+      position: absolute;
+      left: calc((1180px - 700px) / 2 - 60px);
+      top: 52%;
+      z-index: 10;
+      }
+
+    &--right {
+      background: url("./jscourse/exam/static/svg/arrow-right.svg") no-repeat top / cover;
+      position: absolute;
+      right: calc((1180px - 700px) / 2 - 60px);
+      top: 52%;
+      z-index: 11;
+      }
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #333;
+    opacity: .3;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &--active {
+      opacity: 1;
+      background-color: #3590cc;
+    }
+  }
+}
+
+.slide {
+  width: 700px;
+  height: 400px;
+}
+
+.slide1 {
+  background: url("./jscourse/exam/static/images/slide-1.jpg") no-repeat top / cover;
+}
+
+.slide2 {
+  background: url("./jscourse/exam/static/images/slide-2.jpg") no-repeat top / cover;
+}
+
+.slide3 {
+  background: url("./jscourse/exam/static/images/slide-3.jpg") no-repeat top / cover;
 }
 
 .header__logo {
