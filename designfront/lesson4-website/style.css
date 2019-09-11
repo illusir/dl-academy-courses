@@ -1,11 +1,16 @@
 @import "./static/font/fonts.css";
 
+* {
+  margin: 0;
+}
+
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   margin: 0;
   display: flex;
   align-items: center;
   flex-flow: column;
+  position: relative;
 }
 
 /*basic*/
@@ -89,6 +94,13 @@ body {
 }
 
 .contacts__content {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+}
+
+.blog__content {
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -311,6 +323,76 @@ body {
 .blog {
   background: #F2F2F2;
 }
+
+.content__block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.block__item {
+  background: white;
+  width: 380px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.07);
+  }
+
+  .item__content {
+    padding: 15px 20px 20px;
+    box-sizing: border-box;
+  }
+
+  .item__picture {
+    height: 185px;
+    background: url("./static/images/blog-pic-min.png") no-repeat center / cover;
+  }
+
+  .item__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 10px;
+  }
+
+  .item__text {
+    margin-bottom: 47px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .item__bottom {
+    display: flex;
+    align-items: center;
+    }
+
+  .item__button, .content__button {
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 13px 21px 17px 21px;
+    box-sizing: border-box;
+    background: #FFE01B;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  .item__button:hover, .content__button:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+    background-color: #ECCC00;
+    }
+  
+    .item__button:active, .content__button:active {
+      background-color: #FFEB6C;
+    }
+  
+
+  .item__date {
+    font-size: 20px;
+    line-height: 27px;
+  }
 
 /*footer*/
 .contacts-block {
